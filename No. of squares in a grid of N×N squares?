@@ -4,14 +4,12 @@
 using namespace std;
 
 int main() {
-
-	// your code here
-	// 1 == *  0 == .(dot)
+	
     int n=1,ans=0;
-    while(n!=0){
+    while(n!=0){//input the number until 0 is entered
         cin>>n;
         for(int i=1;i<=n;i++)
-            ans+= pow((n-i)+1,2);
+            ans+= pow((n-i)+1,2); //recursive addition starting from 1 square upto n squares.
         cout<<ans<<endl;
     }
 
