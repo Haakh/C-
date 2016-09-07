@@ -1,17 +1,31 @@
+//Output the number of squares contained in a grid which has 'n' squares on an edge.
+//eg. if n = 2 There are 2 square on an edge so total squares are 5
+//for n = 3 there are 3 squares on 1 edge so  14 total squares
+
 #include <iostream>
 #include<strings.h>
 #include<math.h>
+#include<stdlib.h>
 using namespace std;
 
 int main() {
-	
-    int n=1,ans=0;
-    while(n!=0){//input the number until 0 is entered
+
+	// your code here
+	// 1 == *  0 == .(dot)
+    int n=1;
+    int ans=0;
+    while(true){
         cin>>n;
+        if(n!=0){
+        ans = 0;
         for(int i=1;i<=n;i++)
-            ans+= pow((n-i)+1,2); //recursive addition starting from 1 square upto n squares.
+            ans+= pow((n-i)+1,2);
         cout<<ans<<endl;
+        }
+        else
+            exit(0);
     }
 
 	return 0;
 }
+
