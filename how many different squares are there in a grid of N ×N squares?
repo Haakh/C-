@@ -1,0 +1,19 @@
+#include <iostream>
+#include<strings.h>
+#include<math.h>
+using namespace std;
+
+int main() {
+
+	// your code here
+	// 1 == *  0 == .(dot)
+    int n=1,ans=0;
+    while(n!=0){
+        cin>>n;
+        for(int i=1;i<=n;i++)
+            ans+= pow((n-i)+1,2);
+        cout<<ans<<endl;
+    }
+
+	return 0;
+}
