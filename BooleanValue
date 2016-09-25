@@ -1,0 +1,12 @@
+//Convert normal integers to their respective boolean values. ie non-Zero is 1 and 0 is 0.
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int A,B;
+	cin>>A>>B;
+	cout<<A<<" "<<B<<endl;
+    cout<<!!A<<" "<<!!B<<endl;
+	return 0;
+}
