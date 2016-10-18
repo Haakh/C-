@@ -1,0 +1,7 @@
+void ConvertToBinary(int n) /*Alex says: Good to use unsigned int if u can*/
+{
+    if (n / 2 != 0) {
+        ConvertToBinary(n / 2);
+    }
+    printf("%d", n % 2);
+}
